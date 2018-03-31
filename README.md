@@ -287,12 +287,13 @@ with open('schedules/V{}_unscheduled.json'.format(datetime.datetime.now().strfti
 
 
 
-### Ideas for further improvement
+### Ideas for Further Developement
 
-* API imporvements for higher abstarction levels
+* API improvements for higher abstarction levels
+* Standardize inputs for better usabilty
 * REST-API for interaction with other 
 
 
-### Final advice
+### Final Advice
 Keep it simple, over-optimizing this may not just be a waste of your precious time but it may also lead to bad results.
 
