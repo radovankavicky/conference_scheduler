@@ -8,7 +8,7 @@ It was used to schedule e.g.
  * PyConDE & PyData Karlsruhe 2018
  
  The API was inspired by the (PyConUK ConferenceScheduler)[https://github.com/PyconUK/ConferenceScheduler] 👋
- though a diffent path to built the schedule was chosen.
+ though a differnt path to built the schedule was chosen.
 
 ### Main Features:
 
@@ -19,9 +19,9 @@ It was used to schedule e.g.
     * Managing presenters' availibilties
     * Clustering of similar topics
     * Spreading popular talks across the schedule
-    * Building tracks fo topics
+    * Building tracks of topics (e.g. a Django track)
  * Taking results of a user votion into account
- * Export to Excel or group review.
+ * Export to table.xlsx or peer review.
 
 This scheduler is designed to built schedules.
 As of now it does not manage schedule changes.
@@ -68,7 +68,11 @@ This scheduler follows the following simple priciples:
  * random is our friend
  * editorial experice of the program comitee should be utilized
  * create a simple output for group review
-
+ 
+ Once the conference layout is created, 
+ the scheduler assigns the presentations to the slots available.
+ This process is fairly simple: the scheduler looks just for empty slots
+ close to othe similar preeantions and assignes the preseantion to the best fit.
 
 
 ## Building a Conference
@@ -297,3 +301,5 @@ with open('schedules/V{}_unscheduled.json'.format(datetime.datetime.now().strfti
 ### Final Advice
 Keep it simple, over-optimizing this may not just be a waste of your precious time but it may also lead to bad results.
 
+Generate like 5-10 schedules, share them with your peers and select the best one.
+This did indeed work well in the past.
